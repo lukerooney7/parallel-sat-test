@@ -1,12 +1,12 @@
 {
-    "planner-tag": "ParallelSMT-tag",
+    "planner-tag": "forall-lazy-neighbours",
     "up-planner-name": "SMTPlanner",
     "planner-params": {
         "encoder": "EncoderParallelSMT",
         "upper-bound": 1000,
         "search-strategy": "SMTSearch",
-        "configuration": "forall",
-        "run-validation": false,
+        "configuration": "forall-lazy-neighbours",
+        "run-validation": true,
         "compliation-list": [
             ["up_quantifiers_remover", "QUANTIFIERS_REMOVING"],
             ["fast-downward-reachability-grounder", "GROUNDING"]

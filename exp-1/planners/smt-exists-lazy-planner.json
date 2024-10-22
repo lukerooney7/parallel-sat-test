@@ -1,12 +1,12 @@
 {
-    "planner-tag": "SequentialSMT-tag",
+    "planner-tag": "exists-lazy",
     "up-planner-name": "SMTPlanner",
     "planner-params": {
-        "encoder": "EncoderSequentialSMT",
+        "encoder": "EncoderParallelSMT",
         "upper-bound": 1000,
         "search-strategy": "SMTSearch",
-        "configuration": "seq",
-        "run-validation": false,
+        "configuration": "exists-lazy",
+        "run-validation": true,
         "compliation-list": [
             ["up_quantifiers_remover", "QUANTIFIERS_REMOVING"],
             ["fast-downward-reachability-grounder", "GROUNDING"]
